@@ -1,0 +1,340 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+@font-face {
+    font-family: 'Gotham Pro', sans-serif;
+    src: url('../font/gothampro.ttf');
+}
+@font-face {
+    font-family: 'SF Pro Display', sans-serif;
+    src: url('../font/SFPRODISPLAYREGULAR.OTF');
+}
+body{
+    background: #F0F0F0;
+}
+
+.container{
+    max-width: 768px;
+    min-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.fl-col {
+    display: flex;
+    flex-direction: column;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.fl-row{
+    display: flex;
+    flex-direction: row;
+}
+.sp-btw{
+    justify-content: space-between;
+    align-items: center;
+}
+/*header*/
+.header {
+}
+.header__body {
+   
+}
+.header__top{
+    background: #F19D2F;
+    padding: 10px 16px;
+}
+.header__top p{
+    color: #2C2B31;
+    text-align: center;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 12.694px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.header__bottom{
+    background: #FFD1AC;
+    padding: 19px 0;
+}
+.header__bottom p{
+    color: #2C2B31;
+    text-align: center;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 13.469px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+/*banner*/
+.banner__body {
+    position: relative;
+}
+.banner__img__wrap {
+    width: 100%;
+}
+.banner__img__wrap img{
+    width: 100%;
+}
+.banner__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    position: absolute;
+    width: 100%;
+    bottom: 14px;
+}
+.banner__timer {
+    background: #F19D2F;
+}
+.banner__timer p{
+    text-align: center;
+}
+.banner__timer p:first-child{
+    color: #FFF;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 10.599px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.banner__timer p:last-child{
+    color: #FFF;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 21.254px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.banner-box {
+    border-radius: 5.677px;
+    padding: 0 7.1px;
+    width: 116px;
+    height: 58px;
+}
+.banner__price {
+    background: #37D997;
+}
+.old-price {
+    position: relative;
+    color: #FFF;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 18.077px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.old-price:after {
+    position: absolute;
+    content: '';
+    background: #E27500;
+    width: 89px;
+    height: 3.514px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.new-price {
+    color: #FFF;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 22.301px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*product*/
+.product {
+    margin-top: 11px;
+}
+.product__body {
+    padding: 0 16px;
+}
+
+.product__header__txt {
+    color: #2C2B31;
+    font-family: "Gotham Pro", sans-serif;
+    font-size: 12.067px;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+.best-selling {
+    color: #37D997;
+    text-decoration-line: underline;
+}
+.product__title {
+    color: #2C2B31;
+    font-family: "Gotham Pro", sans-serif;
+    font-size: 19.168px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+}
+.product__main-slider{
+    margin: 20px 0;
+}
+.product__small-slider{
+    margin-bottom: 20px;
+}
+.product__small-slider .owl-stage {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 12px;
+}
+
+.current-ops{
+    opacity: 0.4;
+}
+.product__info span{
+    color: #000;
+    font-family: "Gotham Pro", sans-serif;
+    font-size: 15.29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.product__info>div:nth-child(2){
+    margin: 12px 0;
+}
+.product__info .bold{
+    font-weight: 700;
+}
+.product__star{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.product__star svg{
+    margin-right: 4px;
+    cursor: pointer;
+}
+.fill{
+    fill: rgba(248, 182, 86, 1);
+}
+.product__star span{
+    color: #2C2B31;
+    font-family: "Gotham Pro", sans-serif;
+    font-size: 15.29px;
+    font-weight: 400;
+    line-height: normal;
+    display: inline-block;
+    margin-left: 6px;
+}
+
+.product__property {
+    margin-top: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.product__label {
+    color: #2C2B31;
+    text-align: center;
+    font-family: "Gotham Pro", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: normal;
+}
+.selected-wrap{
+    width: 170px;
+    height: 50px;
+    border-radius: 16px;
+    margin-top: 4px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+.arrow{
+    position: absolute;
+    top: 50%;
+    right: 19px;
+    transform: translateY(-50%);
+    transition: all .5s;
+}
+.arrow-rotate{
+    transform: translateY(-50%) rotate(180deg);
+}
+.selected{
+    color: #2C2B31;
+    text-align: center;
+    font-family: "Gotham Pro", sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+ .select__option {
+    color: #000;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin: 7px 0;
+}
+.hide-select{
+    display: none;
+}
+.product__select{
+    width: 170px;
+    height: 100%;
+    border-radius: 16px;
+    background-color: #fff;
+    padding: 10px 12px;
+}
+
+.product__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    background: #37D997;
+    margin-top: 20px;
+}
+.product__btn a{
+    color: #FFF;
+    text-align: center;
+    font-family: "Gotham Pro", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+@media screen and (max-width:380px) {
+    .selected-wrap,
+    .product__select {
+        width: 140px;
+    }
+    .selected {
+        font-size: 16px;
+    }
+    .arrow {
+        right: 10px;
+    }
+}
